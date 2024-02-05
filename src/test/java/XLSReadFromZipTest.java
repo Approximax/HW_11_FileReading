@@ -6,9 +6,9 @@ import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-public class XLSReaderFromZipTest {
+public class XLSReadFromZipTest {
 
-    private final ClassLoader classLoader = XLSReaderFromZipTest.class.getClassLoader();
+    private final ClassLoader classLoader = XLSReadFromZipTest.class.getClassLoader();
 
     @Test
     void xlsParsingTest() throws Exception {

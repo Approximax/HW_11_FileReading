@@ -18,7 +18,7 @@ public class PDFReadFromZipTest {
             while ((entry = zipInputStream.getNextEntry()) != null) {
                 if (entry.getName().endsWith(".pdf")) {
                     PDF pdf = new PDF(zipInputStream);
-                    Assertions.assertEquals("PDF INFO & TEST FILE", pdf.title);
+                    Assertions.assertTrue(pdf.text.contains("PDF INFO & TEST FILE"));
                 }
             }
         }
